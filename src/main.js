@@ -94,7 +94,7 @@ function fallbackCopyTextToClipboard(text) {
 
 }
 
-app.config.globalProperties.$getImageUrl = async function (imagePath) {
+app.config.globalProperties.$getImageUrl = function (imagePath) {
     if (imagePath.startsWith(host.protocol)) {
         return imagePath
     }

@@ -9,7 +9,7 @@
                 <template #header>
                     <Image image-class="item-card-image"
                         v-if="item.images && item.images.length"
-                        :src="host + item.images[0].image"
+                        :src="$getImageUrl(item.images[0].image)"
                         alt="Фото"
                         preview
                         style="width: 100%; height: 200px; object-fit: cover;"
@@ -44,7 +44,6 @@
 </template>
 
 <script>
-import host from "../../host.js"
 
 export default {
     props: {
@@ -59,7 +58,6 @@ export default {
     },
     data() {
         return {
-            host: host,
             // Пример инициализации products из вашего JSON (распакуем вложенность)
             // products: []
         }
