@@ -41,7 +41,6 @@ import TabPanels from 'primevue/tabpanels'
 import TabPanel from 'primevue/tabpanel'
 import Column from 'primevue/column'
 import Tooltip from 'primevue/tooltip'
-import Dropdown from 'primevue/dropdown'
 import ToggleButton from 'primevue/togglebutton'
 import Accordion from 'primevue/accordion'
 import AccordionTab from 'primevue/accordiontab'
@@ -197,7 +196,6 @@ app.component('Toast', Toast)
 app.component('ProgressSpinner', ProgressSpinner)
 app.component('Card', Card)
 app.component('Image', Image)
-app.component('Dropdown', Dropdown)
 app.component('Button', Button)
 app.component('InputText', InputText)
 app.component('TabPanels', TabPanels)

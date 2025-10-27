@@ -8,7 +8,7 @@
         <div class="grid formgrid mb-4 align-items-end">
             <div class="field col-12 md:col-2">
                 <label class="font-semibold block mb-2">Толщина лезвия</label>
-                <Dropdown
+                <Select
                         v-model="bladeThickness"
                         :options="bladeThicknessOptions"
                         optionLabel="label"
